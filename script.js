@@ -26,9 +26,14 @@ function logger(a) {
 }
 var numbers = [1, 2, 3, 4, 5];
 numbers.map(function (num) { return num.toFixed(); });
-//model - required = majburiy talab qilindi 
-//model? - required = no majburiy talab qilinmaydi
 var logCar = (function (car) {
     return "Name of the car ".concat(car.name, ", model is ").concat(car.model, ", created in ").concat(car.year);
 });
+var logBmw = (function (data) {
+    return "Name of the IBmw ".concat(data.name, ", model - ").concat(data.model, ", year ").concat(data.year, ", exrtraballon - ").concat(data.extraBallon);
+});
 console.log(logCar({ name: 'BMW', model: 'M5', year: 2019 }));
+function logPoint(point) {
+    var pointD = point;
+    console.log(pointD.x);
+}
