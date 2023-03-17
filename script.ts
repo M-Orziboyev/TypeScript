@@ -101,10 +101,50 @@
 type actionType = 'hide' | 'show';
 
 function logger(action: actionType): 1 | -1 {
-    switch (action){
+    switch (action) {
         case 'hide':
             return 1
         case "show":
             return -1
     }
 }
+
+//ENUM 
+
+// const runEnum = (): number => {
+//     return 2 
+// }
+// enum Decision {
+//     Yes = 1,
+//     No = runEnum(),
+// }
+
+enum Dictionary {
+    Rus,
+    Uzb,
+    Eng
+}
+
+const uzbIndex = Dictionary.Uzb;
+const uzb = Dictionary[uzbIndex]
+console.log(uzb);
+
+enum Numbers {
+    One,
+    Two,
+    Three,
+}
+
+function getuzbNumber(number: Numbers) {
+    switch (number) {
+        case Numbers.One:
+            return 'Bir'
+        case Numbers.Two:
+            return 'Ikki'
+        case Numbers.Three:
+            return 'Uch'
+        default:
+            const a: never = number
+    }
+}
+
