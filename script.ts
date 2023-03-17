@@ -119,32 +119,36 @@ function logger(action: actionType): 1 | -1 {
 //     No = runEnum(),
 // }
 
-enum Dictionary {
-    Rus,
-    Uzb,
-    Eng
-}
+// enum Dictionary {
+//     Rus,
+//     Uzb,
+//     Eng
+// }
 
-const uzbIndex = Dictionary.Uzb;
-const uzb = Dictionary[uzbIndex]
-console.log(uzb);
+// const uzbIndex = Dictionary.Uzb;
+// const uzb = Dictionary[uzbIndex]
+// console.log(uzb);
 
-enum Numbers {
-    One,
-    Two,
-    Three,
-}
+// enum Numbers {
+//     One,
+//     Two,
+//     Three,
+// }
 
-function getuzbNumber(number: Numbers) {
-    switch (number) {
-        case Numbers.One:
-            return 'Bir'
-        case Numbers.Two:
-            return 'Ikki'
-        case Numbers.Three:
-            return 'Uch'
-        default:
-            const a: never = number
-    }
-}
+// function getuzbNumber(number: Numbers) {
+//     switch (number) {
+//         case Numbers.One:
+//             return 'Bir'
+//         case Numbers.Two:
+//             return 'Ikki'
+//         case Numbers.Three:
+//             return 'Uch'
+//         default:
+//             const a: never = number
+//     }
+// }
 
+
+//Tuples  =  Array
+
+const array: [number, number,string] = [1,3,'asdw'];

@@ -40,5 +40,7 @@ function getuzbNumber(number) {
             return 'Ikki';
         case Numbers.Three:
             return 'Uch';
+        default:
+            var a = number;
     }
 }
