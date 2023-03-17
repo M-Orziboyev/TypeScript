@@ -11,3 +11,5 @@
 <p>Objects</p>
 <p>Conditions</p>
 <p>Methods of the numbers and strings</p>
+<p> Multi data types </p>
+<p>Void</p>
