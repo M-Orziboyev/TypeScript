@@ -74,24 +74,37 @@
 //     console.log(pointD.x);
 // }
 
+//TASK INTERFACE
 
-interface car {
-    name: string,
-    color: string,
-    isBallon: boolean,
-    speed: ISpeed,
-    price: IPrice
+// interface car {
+//     name: string,
+//     color: string,
+//     isBallon: boolean,
+//     speed: ISpeed,
+//     price: IPrice
+// }
+
+// interface ISpeed {
+//     max: number,
+//     min: number
+// }
+
+// interface IPrice {
+//     total: string,
+//     credit: string,
+//     discount: number
+// }
+
+
+// Literal type
+
+type actionType = 'hide' | 'show';
+
+function logger(action: actionType): 1 | -1 {
+    switch (action){
+        case 'hide':
+            return 1
+        case "show":
+            return -1
+    }
 }
-
-interface ISpeed {
-    max: number,
-    min: number
-}
-
-interface IPrice {
-    total: string,
-    credit: string,
-    discount: number
-}
-
-
