@@ -98,16 +98,16 @@
 
 // Literal type
 
-type actionType = 'hide' | 'show';
+// type actionType = 'hide' | 'show';
 
-function logger(action: actionType): 1 | -1 {
-    switch (action) {
-        case 'hide':
-            return 1
-        case "show":
-            return -1
-    }
-}
+// function logger(action: actionType): 1 | -1 {
+//     switch (action) {
+//         case 'hide':
+//             return 1
+//         case "show":
+//             return -1
+//     }
+// }
 
 //ENUM 
 
@@ -151,4 +151,28 @@ function logger(action: actionType): 1 | -1 {
 
 //Tuples  =  Array
 
-const array: [number, number,string] = [1,3,'asdw'];
+// const array: [number, number,string] = [1,3,'asdw'];
+
+
+//Generics
+
+interface ICar {
+    name: string,
+    color:string,
+    onSpeed: <T, G, I> (data: T) => G; 
+}
+
+function loggerTime<T>(data: T): T{
+    if (typeof data === 'string') {
+        data.toLowerCase()
+    }else if (typeof data === 'number'){
+        data.toFixed()
+    }
+    return data
+}
+const car = {
+    name: 'BMW',
+    color: 'white'
+}
+
+const myLogger = loggerTime<ICar>(car);
