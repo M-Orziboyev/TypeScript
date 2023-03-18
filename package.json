@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "name": "typescript_tutorial",
+  "description": "<h1> Learned Knowladges below typescript </h1>",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "@types/react": "^18.0.28"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Orziboyev/TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Orziboyev/TypeScript/issues"
+  },
+  "homepage": "https://github.com/M-Orziboyev/TypeScript#readme"
+}
