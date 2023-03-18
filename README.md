@@ -13,3 +13,4 @@
 <p>Methods of the numbers and strings</p>
 <p> Multi data types </p>
 <p>Void</p>
+<p> Generics </p>
